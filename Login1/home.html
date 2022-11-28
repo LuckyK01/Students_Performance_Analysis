@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body style="background-color:#7a78f3;">
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="dashboard.php">Student's Dash</a></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="font-size:500%; text-align:center; margin-top:7%;">
+        <h1 style="text-align:center;">STUDENT'S PERFORMANCE ANALYSIS</h1>
+    </h1>
+    <center>
+        <a href="dashboard.php">
+            <button class="button button4"
+                STYLE="WIDTH:500PX; HEIGHT:300PX; BACKGROUND-COLOR:#7cfdfd; vertical-align : top;">Dashboard</button></a>
+        <a href="5th_SEM_WT/WT timetable.html">
+            <button class="button button1"
+                STYLE="WIDTH:500PX; HEIGHT:300PX; BACKGROUND-COLOR:rgb(144, 238, 144);vertical-align : bottom; margin-left : -505px;">TIME
+                TABLE</button></a>
+        <a href="marks.html">
+            <button class="button button2"
+                STYLE="WIDTH:400PX; HEIGHT:600PX; BACKGROUND-COLOR:rgb(255, 192, 203);">PERFORMANCE
+                ANALYSIS</button></a>
+        <a href="index2.php">
+            <button class="button button3"
+                STYLE="WIDTH:400PX; HEIGHT:600PX; BACKGROUND-COLOR:#ebed58;">REGISTRATION</button></a>
+    </center>
+
+    <script>
+        let nav = document.querySelector("nav");
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 20) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+
+</html>
