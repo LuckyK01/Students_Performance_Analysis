@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>PHP login system</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <div id="frm">
+
+                    <header>Login</header>
+
+                    <form name="f1" action="authentication.php" onsubmit="return validation()" method="POST">
+                        <div class="field input-field">
+                            
+                            <input type="text" placeholder="UserName" id="user" name="user" />
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" id="pass" name="pass" />
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="field button-field">
+                        <input type="submit" id="btn" value="Login"/>
+                        </div>
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <div class="line"></div>
+                        <div class="media-options">
+                            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1611447242%3A1669118405222010&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAv9LrqZ_ZB5gdlc-kB-XQbFyip5Z_5p0sHE9u3BEq7Pu-uoNnZkv7DrG1haaZr_Y5XgR8UM" class="field google">
+                                <img src="google.png" alt="" class="google-img">
+                                <span>Login with Google</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <script>
+
+                
+                    function validation() {
+                        var id = document.f1.user.value;
+                        var ps = document.f1.pass.value;
+                        if (id.length == "" && ps.length == "") {
+                            alert("User Name and Password fields are empty");
+                            return false;
+                        }
+                        else {
+                            if (id.length == "") {
+                                alert("User Name is empty");
+                                return false;
+                            }
+                            if (ps.length == "") {
+                                alert("Password field is empty");
+                                return false;
+                            }
+                        }
+                    }  
+                </script>
+</body>
+
+</html>

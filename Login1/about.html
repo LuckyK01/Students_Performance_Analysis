@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        .row{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            margin-top: 0px;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .about-section {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 5px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+            width: 100%;
+        }
+
+        .container {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding: 8 8px;
+
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .class-footer {
+            padding: 10px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+            position: fixed;
+            bottom: 5px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="button" value="Back" class ="Back-btn"/>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Some info about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card" style="width:100%">
+                <div class="container">
+                    <h2>Ishika Bhattacharya</h2>
+                    <p class="title">BackEnd Developer</p>
+                    <p>5th Semester, 3rd Year</p>
+                    <p>Jain (Deemed-to-be) University</p>
+                    <p>20btrcs080@ jainuniversity.ac.in</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card" style="width:100%">
+                <div class="container" style="padding: 8px">
+                    <h2>Lucky K</h2>
+                    <p class="title">Lead Designer</p>
+                    <p>5th Semester, 3rd Year</p>
+                    <p>Jain (Deemed-to-be) University</p>
+                    <p>20btrcs088@ jainuniversity.ac.in</p>
+
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card" style="width:100%">
+                <div class="container">
+                    <h2>Jeevan K S</h2>
+                    <p class="title">Documentor</p>
+                    <p>5th Semester, 3rd Year</p>
+                    <p>Jain (Deemed-to-be) University</p>
+                    <p>20btrcs083@ jainuniversity.ac.in</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card" style="width:100%">
+                <div class="container">
+                    <h2>Prachee SG Khobragade</h2>
+                    <p class="title">FrontEnd Developer</p>
+                    <p>5th Semester, 3rd Year</p>
+                    <p>Jain (Deemed-to-be) University</p>
+                    <p>20btrcs109@ jainuniversity.ac.in</p>
+                    <p><input type="button" class="button" value="Contact" onclick='location.href="#"'/></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="class-footer">
+        <footer>
+            JAIN (Deemed-to-be University)
+            #44/4, District Fund Road,
+            Jayanagar 9th Block,
+            Bangalore, Karnataka,
+            India - 560069
+
+            +91 7337614222
+            admissions@jainuniversity.ac.in
+        </footer>
+        <footer>
+            @Copyright JainUniveristy- All Rights Reserved.
+        </footer>
+    </div>
+
+</html>
